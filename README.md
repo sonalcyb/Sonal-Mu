@@ -34,7 +34,7 @@ The goal is to give visitors an engaging look at my work and cybersecurity exper
 ![Homepage Screenshot](https://github.com/sonalcyb/Sonal-Mu/blob/main/img4.jpg)
 
 ### 💼 Projects Page  
-![Projects Page Screenshot](https://github.com/sonalcyb/Portfolio/blob/main/dp.jpg)
+![Projects Page Screenshot](https://github.com/sonalcyb/Sonal-Mu/blob/main/dp.jpg)
 
 ---
 
