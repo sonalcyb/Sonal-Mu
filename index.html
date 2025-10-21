@@ -111,7 +111,9 @@
     <main class="main-content" tabindex="-1">
         <section id="hero" class="hero-section">
             <div class="hero-text">
-                <h1>Hello, I'm Sonal Kumar</h1>
+                <div class="marquee-container">
+    <h1 class="marquee-text">Hello, I'm Sonal Kumar</h1>
+</div>
                 <hr />
                 <p>A passionate Cybersecurity Engineer.</p>
                 <a href="#portfolio" class="btn-primary">See My Work</a>
@@ -126,35 +128,45 @@
             <hr />
             <div class="portfolio-grid">
                 <div class="card">
-                    <img src="img1.jpg" alt="Project 1" />
+                   <a href="https://www.khanacademy.org/">
+  <img src="img3.jpg" alt="Project 1" />
+</a>
                     <div class="card-content">
                         <h3>Project One</h3>
                         <p>A secure web app with real-time threat detection.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img2.webp" alt="Project 2" />
+                    <a href="https://www.khanacademy.org/">
+  <img src="img2.webp" alt="Project 2" />
+</a>
                     <div class="card-content">
                         <h3>Project Two</h3>
                         <p>Custom encryption module for data protection.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img3.jpg" alt="Project 3" />
+                    <a href="https://www.khanacademy.org/">
+  <img src="img6.JPG" alt="Project 3" />
+</a>
                     <div class="card-content">
                         <h3>Project Three</h3>
                         <p>Penetration testing tool suite.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img5.jpg" alt="Project 4" />
+                    <a href="https://www.khanacademy.org/">
+  <img src="img5.jpg" alt="Project 4" />
+</a>
                     <div class="card-content">
                         <h3>Project Four</h3>
                         <p>Network security monitoring dashboard.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img6.JPG" alt="Project 5" />
+                     <a href="https://www.khanacademy.org/">
+  <img src="img6.JPG" alt="Project 5" />
+</a>
                     <div class="card-content">
                         <h3>Project Five</h3>
                         <p>Automated vulnerability scanner.</p>
@@ -200,7 +212,7 @@
               const storyText = `
 🌱 Main ek simple aur poor family se belong karta hu. Life ke kuch saal maine padhai se break le liya, par baad me samajh aaya ki education kitni important hai.
 
-✨ Phir maine ADCA class join ki, jaha ek sir ne mujhe suggest kiya: "Sonal, tum Diploma in CSE karo."
+✨ Phir maine ADCA class join kiya, jaha ek sir ne mera intrest dekha phir mujhe suggest kiya:"tum Diploma in CSE karo."
 
 🚶‍♂️ Us din se maine apna decision liya — main Aligarh aaya padhai karne, aur wahi se mera Cybersecurity ka safar start hua. 💻
               `;
@@ -220,7 +232,33 @@
             });
           </script>
         </section>
+<section id="life-story-video">
+    <h2>From Zero to Now: A Quick Look at My Struggle</h2>
+    
+    <div class="video-container">
+        <video id="myVideo" width="560" height="315" src="/Video.mp4" preload="metadata">
+            <source src="/Video.mp4" type="video/mp4">
+            आपका ब्राउज़र HTML5 वीडियो को सपोर्ट नहीं करता।
+        </video>
+    </div>
+    
+    <p>This is not just my story, it's a response to everyone who wanted to see me fail</p>
+</section>
 
+<script>
+    const video = document.getElementById('myVideo');
+
+    // वीडियो पर क्लिक/टच इवेंट हैंडल करें
+    video.addEventListener('click', function() {
+        if (video.paused) {
+            // वीडियो चलाओ
+            video.play();
+        } else {
+            // वीडियो रोको
+            video.pause();
+        }
+    });
+</script>
         <section id="contact" class="section contact-section">
             <h2>Get In Touch</h2>
             <hr />
@@ -241,8 +279,7 @@
 </div>
 
 <footer class="footer">
-    <p>&copy; 2025 Sonal Kumar</p>
+    <p>&copy;Copyright Sonal @All Rights Reserved</p>
 </footer>
-
 </body>
 </html>
