@@ -31,14 +31,15 @@ The goal is to give visitors an engaging look at my work and cybersecurity exper
 ## 🖼️ Screenshots  
 
 ### 🏠 Homepage  
-![Homepage Screenshot](https://github.com/sonalcyb/Portfolio/blob/main/img4.jpg)
+![Homepage Screenshot](https://github.com/sonalcyb/Sonal-Mu/blob/main/img4.jpg)
 
 ### 💼 Projects Page  
 ![Projects Page Screenshot](https://github.com/sonalcyb/Portfolio/blob/main/dp.jpg)
 
 ---
 
-## 📧 Contact  
+## 📧 Con
+tact  
 
 👩‍💻 **Sonal**  
 - 🌐 Website: [https://sonalcyb.github.io/Sonal-Mu/](https://sonalcyb.github.io/Sonal-Mu/)  
