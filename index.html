@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sonal Kumar Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h1 class="logo">Sonal Kumar</h1>
+            <button aria-label="Close Menu" id="close-btn" class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#stories" class="nav-link"><i class="fas fa-book"></i> Stories</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">&copy; 2025 Sonal Kumar</div>
+    </aside>
+
+    <!-- Hamburger for mobile -->
+    <button id="hamburger" class="hamburger" aria-label="Open Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="main-content" tabindex="-1">
+        <section id="hero" class="hero-section">
+            <div class="hero-text">
+                <h1>Hello, I'm Sonal Kumar</h1>
+                <hr />
+                <p>A passionate Cybersecurity Engineer and developer crafting secure solutions.</p>
+                <a href="#portfolio" class="btn-primary">See My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="img5.jpg" alt="Sonal Kumar Portrait" />
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio Highlights</h2>
+            <hr />
+            <div class="portfolio-grid">
+                <div class="card">
+                    <img src="img1.jpg" alt="Project 1" />
+                    <div class="card-content">
+                        <h3>Project One</h3>
+                        <p>A secure web app with real-time threat detection.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img2.webp" alt="Project 2" />
+                    <div class="card-content">
+                        <h3>Project Two</h3>
+                        <p>Custom encryption module for data protection.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img3.jpg" alt="Project 3" />
+                    <div class="card-content">
+                        <h3>Project Three</h3>
+                        <p>Penetration testing tool suite.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img5.jpg" alt="Project 4" />
+                    <div class="card-content">
+                        <h3>Project Four</h3>
+                        <p>Network security monitoring dashboard.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img6.JPG" alt="Project 5" />
+                    <div class="card-content">
+                        <h3>Project Five</h3>
+                        <p>Automated vulnerability scanner.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills & Certifications</h2>
+            <hr />
+            <ul class="skills-list">
+                <li>Cybersecurity & Ethical Hacking</li>
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Python & JavaScript Development</li>
+                <li>Advance Diploma In Computer Application (Wizard Tech)</li>
+                <li>Kushal Yuva Program Certified</li>
+            </ul>
+        </section>
+
+        <section id="stories" class="section">
+            <h2>My Journey</h2>
+            <hr />
+            <article class="story">
+                <h3>The Beginning</h3>
+                <p>Mera naam [translate:Your Name] hai aur yeh kahani hai ki main kaise yahan tak pahuncha. Maine [translate:Start Date] mein shuruat ki aur [translate:Challenge] jaisi mushkilon ka saamna kiya.</p>
+            </article>
+            <article class="story">
+                <h3>Growth & Learning</h3>
+                <p>Meri sabse badi seekh yeh rahi ki haar maan lena aasaan hai, lekin har choti jeet ka jashn manana zaroori hai. [translate:Project Name] se maine time management seekha.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2>Get In Touch</h2>
+            <hr />
+            <form id="contactForm" class="contact-form" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Sonal Kumar</p>
+</footer>
+
+</body>
+</html>
