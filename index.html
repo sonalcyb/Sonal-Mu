@@ -8,6 +8,75 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
+    <style>
+      /* ===== My Journey Section ===== */
+      #stories {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        padding: 60px 20px;
+        background: linear-gradient(270deg, #1a1a2e, #16213e, #0f3460, #533483);
+        background-size: 800% 800%;
+        animation: gradientFlow 12s ease infinite;
+        border-radius: 20px;
+      }
+
+      @keyframes gradientFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      /* Floating Lights */
+      .animated-bg {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .light {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 50%;
+        animation: floatLights 10s infinite ease-in-out;
+      }
+
+      .light:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+      .light:nth-child(2) { top: 50%; left: 30%; animation-delay: 2s; }
+      .light:nth-child(3) { top: 70%; left: 60%; animation-delay: 4s; }
+      .light:nth-child(4) { top: 40%; left: 80%; animation-delay: 6s; }
+      .light:nth-child(5) { top: 10%; left: 50%; animation-delay: 8s; }
+
+      @keyframes floatLights {
+        0% { transform: translateY(0) scale(1); opacity: 0.7; }
+        50% { transform: translateY(-30px) scale(1.2); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 0.7; }
+      }
+
+      /* Story text */
+      .story {
+        position: relative;
+        z-index: 1;
+        font-size: 1.1em;
+        line-height: 1.8;
+        text-align: justify;
+        max-width: 800px;
+        margin: 0 auto;
+        white-space: pre-line;
+      }
+
+      /* Fade-in animation */
+      .fade-in {
+        animation: fadeIn 2s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
 </head>
 <body>
 
@@ -28,7 +97,7 @@
                 <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-        <div class="sidebar-footer">&copy; 2025 Sonal Kumar</div>
+        <div class="sidebar-footer">&copy; 2025 Sonal.All Rights Reserved</div>
     </aside>
 
     <!-- Hamburger for mobile -->
@@ -44,7 +113,7 @@
             <div class="hero-text">
                 <h1>Hello, I'm Sonal Kumar</h1>
                 <hr />
-                <p>A passionate Cybersecurity Engineer and developer crafting secure solutions.</p>
+                <p>A passionate Cybersecurity Engineer.</p>
                 <a href="#portfolio" class="btn-primary">See My Work</a>
             </div>
             <div class="hero-image">
@@ -95,29 +164,61 @@
         </section>
 
         <section id="skills" class="section">
-            <h2>Skills & Certifications</h2>
+            <h2>Skills</h2>
             <hr />
             <ul class="skills-list">
-                <li>Cybersecurity & Ethical Hacking</li>
+                <li>Penetration</li>
                 <li>Network Security</li>
-                <li>Cryptography</li>
-                <li>Python & JavaScript Development</li>
-                <li>Advance Diploma In Computer Application (Wizard Tech)</li>
-                <li>Kushal Yuva Program Certified</li>
+                <li>Cybersecurity & Ethical Hacking</li>
+            <h2> Certifications</h2>
+                 <hr />
+                <li>Certified Ethical Hacker (2025)</li>
+                <li>Diploma In Computer Science Engineering</li>
+                <li>Advance Diploma In Computer Application</li>
             </ul>
         </section>
 
+        <!-- ===== My Journey Section ===== -->
         <section id="stories" class="section">
-            <h2>My Journey</h2>
-            <hr />
-            <article class="story">
-                <h3>The Beginning</h3>
-                <p>Mera naam [translate:Your Name] hai aur yeh kahani hai ki main kaise yahan tak pahuncha. Maine [translate:Start Date] mein shuruat ki aur [translate:Challenge] jaisi mushkilon ka saamna kiya.</p>
-            </article>
-            <article class="story">
-                <h3>Growth & Learning</h3>
-                <p>Meri sabse badi seekh yeh rahi ki haar maan lena aasaan hai, lekin har choti jeet ka jashn manana zaroori hai. [translate:Project Name] se maine time management seekha.</p>
-            </article>
+          <!-- Background animation -->
+          <div class="animated-bg">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+
+          <h2>My Journey</h2>
+          <hr />
+          <div class="story fade-in">
+            <p id="typing-text"></p>
+          </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const storyText = `
+🌱 Main ek simple aur poor family se belong karta hu. Life ke kuch saal maine padhai se break le liya, par baad me samajh aaya ki education kitni important hai.
+
+✨ Phir maine ADCA class join ki, jaha ek sir ne mujhe suggest kiya: "Sonal, tum Diploma in CSE karo."
+
+🚶‍♂️ Us din se maine apna decision liya — main Aligarh aaya padhai karne, aur wahi se mera Cybersecurity ka safar start hua. 💻
+              `;
+
+              const typingElement = document.getElementById("typing-text");
+              let index = 0;
+
+              function typeText() {
+                if (index < storyText.length) {
+                  typingElement.textContent += storyText.charAt(index);
+                  index++;
+                  setTimeout(typeText, 40);
+                }
+              }
+
+              typeText();
+            });
+          </script>
         </section>
 
         <section id="contact" class="section contact-section">
