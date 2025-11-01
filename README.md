@@ -38,8 +38,7 @@ The goal is to give visitors an engaging look at my work and cybersecurity exper
 
 ---
 
-## 📧 Con
-tact  
+## 📧 Contact us:-
 
 👩‍💻 **Sonal**  
 - 🌐 Website: [https://sonalcyb.github.io/Sonal-Mu/](https://sonalcyb.github.io/Sonal-Mu/)  
